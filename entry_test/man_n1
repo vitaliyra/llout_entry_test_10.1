@@ -1,0 +1,58 @@
+vitaliy19@vitaliy19-System:~/Рабочий стол$ . ./cd2
+vitaliy19@vitaliy19-System:~/mt_forge$ . ./act
+(myvenv) vitaliy19@vitaliy19-System:~/mt_forge$ . ./rs2
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 15, 2020 - 08:22:31
+Django version 2.0.13, using settings 'my_project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[15/Jan/2020 08:22:40] "GET / HTTP/1.1" 200 271
+id_riddle 1
+if y<=x:
+    print(1)
+
+???? y>x and y<=x*1.1:   
+    print(2)
+
+else:
+    n=1
+    while x*1.1**n<=y:   
+        n+=1
+    print(n+1)
+ответы
+feli
+ifel
+elif
+id_riddle 2
+from math import ????                       
+
+def dist(x1, y1, x2, y2):
+    return sqrt((x2-x1)**2+(y2-y1)**2)
+ответы
+sqrt
+math
+dist
+id_riddle 3
+def summa(ll):
+    summa=0
+    for ii in ll:
+        summa ?? ii   
+    return summa
+ответы
+=+
++=
+==
+id_riddle 4
+dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?
+ответы
+[]
+()
+{}
+[15/Jan/2020 08:22:45] "GET /ent_test HTTP/1.1" 200 939
+
+

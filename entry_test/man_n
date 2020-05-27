@@ -1,0 +1,51 @@
+vitaliy19@vitaliy19-System:~/Рабочий стол$ . ./cd2
+vitaliy19@vitaliy19-System:~/mt_forge$ . ./act
+(myvenv) vitaliy19@vitaliy19-System:~/mt_forge$ cd llout_входной_тест
+(myvenv) vitaliy19@vitaliy19-System:~/mt_forge/llout_входной_тест$ . ./sh2
+Python 3.6.8 (default, Apr  9 2019, 04:59:38) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from entry_test import models 
+>>> qs=models.Riddle.objects.all()
+>>> for topic in qs:
+...     print(topic.id, topic)
+... 
+1 if y<=x:
+    print(1)
+
+???? y>x and y<=x*1.1:   
+    print(2)
+
+else:
+    n=1
+    while x*1.1**n<=y:   
+        n+=1
+    print(n+1)
+2 from math import ????                       
+
+def dist(x1, y1, x2, y2):
+    return sqrt((x2-x1)**2+(y2-y1)**2)
+3 def summa(ll):
+    summa=0
+    for ii in ll:
+        summa ?? ii   
+    return summa
+4 dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?
+>>> r = models.Riddle.objects.get(id=4)
+>>> r.option_set.all()
+<QuerySet [<Option: [] - (Wrong) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>, <Option: () - (Wrong) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>, <Option: {} - (Correct) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>]>
+>>> 
+

@@ -1,0 +1,15 @@
+{% extends "entry_test/base.html" %}
+	{% block header %}
+        {% endblock header %}
+{% block content %}
+<div class='jumbotron'> 
+   <h1>{{ res }}</h1>
+</div>
+{% if res1 %}
+
+<h2><a href="accounts/signup">на регистрацию</a></h2>
+
+{% endif %}
+
+{% endblock content %}
+

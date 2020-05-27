@@ -1,0 +1,50 @@
+{% extends "entry_test/base.html" %}
+	{% block header %}
+Перед регистрацией вы должны пройти
+	 <div class='jumbotron'>
+<h1>Входной тест</h1>
+</div>
+{% endblock header %}
+{% block content %}
+   <strong>
+    
+<table border="3">
+<tr>
+{% for person in remembrancies %}
+<td> 
+<pre>
+<p>
+{{person.riddle_text}}
+ </p>
+</pre>
+</td>
+{% endfor %} 
+</tr>
+
+<form action="{% url 'entry_test:home1' %}" method="post">
+    {% csrf_token %}
+
+<tr>
+{% for person in remembrancies1 %}
+<td> 
+{% for per in person %}
+     <input type="checkbox" name={{per}} />
+        <label > {{per}}</label>
+    <br>
+    
+{% endfor %} 
+</td>
+{% endfor %} 
+</tr>
+</table>
+
+<table border="3">
+<tr>
+
+</table>
+    <input type="submit" value="Ответ готов" />
+</form>            
+
+</strong>
+
+{% endblock content %}

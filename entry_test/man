@@ -1,0 +1,57 @@
+vitaliy@vitaliy-PC:~$ . ./cd2
+vitaliy@vitaliy-PC:~/mt_forge$ . ./act
+(myvenv) vitaliy@vitaliy-PC:~/mt_forge$ cd llout_входной_тест
+(myvenv) vitaliy@vitaliy-PC:~/mt_forge/llout_входной_тест$ cd entry_test
+(myvenv) vitaliy@vitaliy-PC:~/mt_forge/llout_входной_тест/entry_test$ cd ..
+(myvenv) vitaliy@vitaliy-PC:~/mt_forge/llout_входной_тест$ . ./sh2
+Python 3.7.5 (default, Nov 20 2019, 09:21:52) 
+[GCC 9.2.1 20191008] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from entry_test import models 
+>>> qs=models.Riddle.objects.all()
+>>> for topic in qs:
+...     print(topic.id, topic)
+... 
+1 def summa(ll):
+    summa=0
+    for ii in ll:
+        summa ?? ii   
+    return summa
+2 if y<=x:
+    print(1)
+
+???? y>x and y<=x*1.1:    
+    print(2)
+
+else:
+    n=1
+    while x*1.1**n<=y:
+        n+=1
+    print(n+1)
+5 from math import ????                       
+
+def dist(x1, y1, x2, y2):
+    return sqrt((x2-x1)**2+(y2-y1)**2)
+6 dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?
+>>> r = Riddle.objects.get(id=6)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Riddle' is not defined
+>>> r = models.Riddle.objects.get(id=6)
+>>> r.option_set.all()
+<QuerySet [<Option: [] - (Wrong) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>, <Option: () - (Wrong) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>, <Option: {} - (Correct) [dd = ?
+    'color': 'цвет',
+    'love': 'любовь'    
+    ?]>]>
+>>> 
+
